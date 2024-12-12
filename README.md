@@ -57,6 +57,6 @@ I have also included a number of example programs to help you understand the con
 
 **Additional resources:**
 
-  * C\# BroCode: [https://docs.microsoft.com/en-us/dotnet/csharp/](https://youtu.be/wxznTygnRfQ?si=7-153hW2BT_FvlMP)
+  * C\# BroCode: [ClickHere](https://youtu.be/wxznTygnRfQ?si=7-153hW2BT_FvlMP)
 
 I hope you find this repo helpful\! If you have any questions, please feel free to leave a comment below.
