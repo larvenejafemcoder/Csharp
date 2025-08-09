@@ -1,19 +1,22 @@
-Gotcha — I’ll merge everything into a single **Linux IDE/Editor Guide** with a **Table of Contents** so you can skim it like a pro hacker reading a classified doc at 3 AM.
-
----
-
 # 🖥️ Linux IDE & Text Editor Guide (2025 Edition)
 
 *"From comfy clicky IDEs to raw terminal brain-burners"*
 
+> **📌 Reader's Note**  
+> Before diving in, please **read carefully** and **follow each tutorial step-by-step**.  
+> Take a moment to **understand** *why* the code works instead of just *what* it does — it'll save you headaches later.  
+> And please, **don't just copy my whole code** blindly. Tweak it, break it, fix it again — that's how you actually learn.
+
 ## 📑 Table of Contents
 
-1. **Beginner-Friendly IDEs**
-2. **General-Purpose IDEs for All Skill Levels**
-3. **Lightweight Editors for Fast Coding**
-4. **Terminal-Based Hardcore Editors**
-5. **Full-Time CLI Workflows**
-6. **Quick Summary Table**
+1. [Beginner-Friendly IDEs](#1--beginner-friendly-ides)
+2. [General-Purpose IDEs for All Skill Levels](#2--general-purpose-ides-for-all-skill-levels)
+3. [Lightweight Editors for Fast Coding](#3--lightweight-editors-for-fast-coding)
+4. [Terminal-Based Hardcore Editors](#4--terminal-based-hardcore-editors)
+5. [Full-Time CLI Workflows](#5--full-time-cli-workflows)
+6. [Quick Summary Table](#6--quick-summary-table)
+7. [Setting Up to Run BroCode C# Code](#setting-up-to-run-brocode-c-code)
+8. [C# Tutorial Video Index](#c-tutorial-for-beginners--full-video-index-150)
 
 ---
 
@@ -21,10 +24,10 @@ Gotcha — I’ll merge everything into a single **Linux IDE/Editor Guide** with
 
 For those who want *"it just works"* energy.
 
-* **VS Code** – Easiest setup, loads of extensions, cross-platform.
-* **Cursor** – AI-focused VS Code fork, snappy and integrated with AI tools.
-* **Zed (Linux Beta)** – Modern, minimalist, super-fast.
-* **VSCodium** – VS Code without Microsoft telemetry.
+- **VS Code** – Easiest setup, loads of extensions, cross-platform.
+- **Cursor** – AI-focused VS Code fork, snappy and integrated with AI tools.
+- **Zed (Linux Beta)** – Modern, minimalist, super-fast.
+- **VSCodium** – VS Code without Microsoft telemetry.
 
 ---
 
@@ -32,10 +35,10 @@ For those who want *"it just works"* energy.
 
 The all-rounders — good for Python, C++, Java, web dev, and more.
 
-* **JetBrains Fleet** – Cloud + local hybrid IDE.
-* **JetBrains IntelliJ IDEA Community** – Great for Java/Kotlin.
-* **Eclipse IDE** – Classic Java/C++/Python support.
-* **Geany** – Very lightweight but feature-rich for multiple languages.
+- **JetBrains Fleet** – Cloud + local hybrid IDE.
+- **JetBrains IntelliJ IDEA Community** – Great for Java/Kotlin.
+- **Eclipse IDE** – Classic Java/C++/Python support.
+- **Geany** – Very lightweight but feature-rich for multiple languages.
 
 ---
 
@@ -43,29 +46,29 @@ The all-rounders — good for Python, C++, Java, web dev, and more.
 
 For when you want speed but still have a mouse.
 
-* **Sublime Text** – Fast, elegant, multi-language, great keyboard workflow.
-* **Kate** – KDE’s lightweight but powerful text editor.
-* **Mousepad** – XFCE’s ultra-minimal text editor.
+- **Sublime Text** – Fast, elegant, multi-language, great keyboard workflow.
+- **Kate** – KDE's lightweight but powerful text editor.
+- **Mousepad** – XFCE's ultra-minimal text editor.
 
 ---
 
 ## 4. ⌨️ Terminal-Based Hardcore Editors
 
-For when you’re ready to scare normal people.
+For when you're ready to scare normal people.
 
-* **Neovim** – Modern Vim, scriptable in Lua, infinite customizability.
-* **Vim** – The OG modal editor, runs everywhere.
-* **Micro** – A terminal editor with normal keybindings for sanity.
+- **Neovim** – Modern Vim, scriptable in Lua, infinite customizability.
+- **Vim** – The OG modal editor, runs everywhere.
+- **Micro** – A terminal editor with normal keybindings for sanity.
 
 ---
 
 ## 5. 🖤 Full-Time CLI Workflows
 
-The “Linux wizard” experience.
+The "Linux wizard" experience.
 
-* **Helix** – Modal editor like Vim but saner defaults.
-* **Emacs (Doom/Spacemacs)** – Text editor turned operating system.
-* **Kakoune** – Minimalist but command-rich modal editor.
+- **Helix** – Modal editor like Vim but saner defaults.
+- **Emacs (Doom/Spacemacs)** – Text editor turned operating system.
+- **Kakoune** – Minimalist but command-rich modal editor.
 
 ---
 
@@ -83,63 +86,49 @@ The “Linux wizard” experience.
 | **Emacs**        | TUI/GUI Hybrid | Power users              | Infinite extensibility         | Steep learning + heavy    |
 | **Kate**         | GUI Editor     | KDE fans                 | Lightweight, good features     | KDE dependencies          |
 
-Alright pookie, here’s everything merged and cleaned so you can read it in one go without scrolling all over the place:
-
 ---
 
-## 🖥 Setting Up to Run BroCode C# Code
+# 🖥 Setting Up to Run BroCode C# Code
 
-Since BroCode’s C# code is built to run on **.NET**, we’ll set up the **latest LTS version (.NET 8.0)** for maximum compatibility and performance.
+Since BroCode's C# code is built to run on **.NET**, we'll set up the **latest LTS version (.NET 8.0)** for maximum compatibility and performance.
 
----
+## 1️⃣ Install .NET 8.0 LTS
 
-### 1️⃣ Install .NET 8.0 LTS
+### Windows
 
-#### **Windows**
-
-1. Go to the official .NET download page:
+1. Go to the official .NET download page:  
    🔗 [https://dotnet.microsoft.com/en-us/download/dotnet/8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 2. Download **.NET SDK 8.0 (LTS)** → choose *Windows x64 Installer*.
 3. Install it and restart your terminal (PowerShell, cmd, or Windows Terminal).
 
----
+### Linux
 
-#### **Linux (Arch & Ubuntu example)**
-
-* **Arch Linux / Manjaro**
-
+**Arch Linux / Manjaro**
 ```bash
 sudo pacman -S dotnet-sdk dotnet-runtime
 ```
 
-* **Ubuntu / Debian**
-
+**Ubuntu / Debian**
 ```bash
 sudo apt update
 sudo apt install -y dotnet-sdk-8.0
 ```
 
----
-
-#### **macOS**
+### macOS
 
 ```bash
 brew install --cask dotnet-sdk
 ```
 
----
-
-### 2️⃣ Verify Installation
+## 2️⃣ Verify Installation
 
 ```bash
 dotnet --version
 ```
 
-If it shows `8.x.x`, you’re good to go.
+If it shows `8.x.x`, you're good to go.
 
----
-
-### 3️⃣ Run C# Code (BroCode Style)
+## 3️⃣ Run C# Code (BroCode Style)
 
 If your file is named `Program.cs`:
 
@@ -150,11 +139,9 @@ cd MyApp
 dotnet run
 ```
 
----
+## 4️⃣ Optional – Install Mono
 
-### 4️⃣ Optional – Install **Mono**
-
-Mono lets you run older .NET Framework code that isn’t compatible with modern .NET:
+Mono lets you run older .NET Framework code that isn't compatible with modern .NET:
 
 ```bash
 # Arch
@@ -164,84 +151,63 @@ sudo pacman -S mono
 sudo apt install mono-complete
 ```
 
----
+## TL;DR
 
-### TL;DR
-
-* Install **.NET SDK 8.0 LTS** (core requirement for BroCode’s modern C# code).
-* Use **Mono** only if you need legacy compatibility.
-* Run `dotnet run` inside your project folder to execute the program.
+- Install **.NET SDK 8.0 LTS** (core requirement for BroCode's modern C# code).
+- Use **Mono** only if you need legacy compatibility.
+- Run `dotnet run` inside your project folder to execute the program.
 
 ---
 
-If you want, I can also add a **one-command script** for Arch, Ubuntu, and Windows so you can just copy-paste it and instantly have everything ready.
-Here’s a clean little “reader’s note” you can drop into your Markdown so future readers know to slow down, think, and not just Ctrl+C → Ctrl+V their way through life:
+# C# Tutorial for Beginners — Full Video Index (1–50)
 
----
-
-> **📌 Reader’s Note**
-> Before diving in, please **read carefully** and **follow each tutorial step-by-step**.
-> Take a moment to **understand** *why* the code works instead of just *what* it does — it’ll save you headaches later.
-> And please, **don’t just copy my whole code** blindly. Tweak it, break it, fix it again — that’s how you actually learn.
-
----
-
- # From the Bro Code C# playlist, so we can now build the **full tactical README index (1–50)** with exact video titles, durations, and topics in order.
-
-Here’s your **mission-ready numbered index**:
-
----
-
-## **C# Tutorial for Beginners — Full Video Index (1–50)**
-
-1. **C# tutorial for beginners** — 6:31
-2. **C# output 💬** — 4:18
-3. **C# variables ✖️** — 8:44
-4. **C# constants π** — 1:04
-5. **C# type casting 💱** — 7:15
-6. **C# user input ⌨️** — 3:35
-7. **C# arithmetic operators 🧮** — 4:31
-8. **C# Math class 📏** — 5:01
-9. **C# random numbers 🎲** — 3:33
-10. **C# hypotenuse calculator program 📐** — 2:08
-11. **C# string methods 🔤** — 6:52
-12. **C# if statements 🤔** — 6:27
-13. **C# switches 🔀** — 3:07
-14. **C# logical operators && || 🔣** — 3:56
-15. **C# while loops ♾️** — 3:19
-16. **C# for loops 🔁** — 3:49
-17. **C# nested loops ➿** — 5:04
-18. **C# number guessing game 🔢** — 8:41
-19. **C# rock-paper-scissors game 🗿** — 11:44
-20. **C# calculator program 🖩** — 8:02
-21. **C# arrays 🚗** — 5:57
-22. **C# foreach loop ➰** — 1:52
-23. **C# methods 📞** — 6:05
-24. **C# return keyword ↩️** — 3:35
-25. **C# method overloading 🤯** — 1:33
-26. **C# params keyword ⚙️** — 3:09
-27. **C# exception handling ⚠️** — 5:01
-28. **C# conditional operator ❓** — 3:01
-29. **C# string interpolation 💲** — 3:25
-30. **C# multidimensional arrays ⬜** — 5:06
-31. **C# classes 📦** — 4:54
-32. **C# objects 🧍‍♂️** — 5:01
-33. **C# constructors 👷** — 5:44
-34. **C# static 🚫** — 5:03
-35. **C# overloaded constructors 🍕** — 4:21
-36. **C# inheritance 👪** — 4:29
-37. **C# abstract classes 👻** — 2:36
-38. **C# array of objects 🏬** — 3:50
-39. **C# objects as arguments 🧳** — 4:18
-40. **C# method overriding 🙅** — 4:02
-41. **C# ToString method 💭** — 3:28
-42. **C# polymorphism 🎭** — 5:11
-43. **C# interfaces 🐟** — 5:38
-44. **C# Lists 📃** — 6:46
-45. **C# List of objects 🦸‍♂️** — 3:29
-46. **C# getters & setters 🔒** — 4:06
-47. **C# auto implemented properties 🔐** — 2:46
-48. **C# enums 🪐** — 7:07
-49. **C# generics ⁉️** — 5:33
-50. **C# multithreading 🧶** — 6:59
-
+1. **C# tutorial for beginners**
+2. **C# output 💬**
+3. **C# variables ✖️**
+4. **C# constants π**
+5. **C# type casting 💱**
+6. **C# user input ⌨️**
+7. **C# arithmetic operators 🧮**
+8. **C# Math class 📏**
+9. **C# random numbers 🎲**
+10. **C# hypotenuse calculator program 📐**
+11. **C# string methods 🔤**
+12. **C# if statements 🤔**
+13. **C# switches 🔀**
+14. **C# logical operators && || 🔣**
+15. **C# while loops ♾️**
+16. **C# for loops 🔁**
+17. **C# nested loops ➿**
+18. **C# number guessing game 🔢**
+19. **C# rock-paper-scissors game 🗿**
+20. **C# calculator program 🖩**
+21. **C# arrays 🚗**
+22. **C# foreach loop ➰**
+23. **C# methods 📞**
+24. **C# return keyword ↩️**
+25. **C# method overloading 🤯**
+26. **C# params keyword ⚙️**
+27. **C# exception handling ⚠️**
+28. **C# conditional operator ❓**
+29. **C# string interpolation 💲**
+30. **C# multidimensional arrays ⬜**
+31. **C# classes 📦**
+32. **C# objects 🧍‍♂️**
+33. **C# constructors 👷**
+34. **C# static 🚫**
+35. **C# overloaded constructors 🍕**
+36. **C# inheritance 👪**
+37. **C# abstract classes 👻**
+38. **C# array of objects 🏬**
+39. **C# objects as arguments 🧳**
+40. **C# method overriding 🙅**
+41. **C# ToString method 💭**
+42. **C# polymorphism 🎭**
+43. **C# interfaces 🐟**
+44. **C# Lists 📃**
+45. **C# List of objects 🦸‍♂️**
+46. **C# getters & setters 🔒**
+47. **C# auto implemented properties 🔐**
+48. **C# enums 🪐**
+49. **C# generics ⁉️**
+50. **C# multithreading 🧶**
