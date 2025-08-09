@@ -1,4 +1,4 @@
-# 🖥️ Linux IDE & Text Editor Guide (2025 Edition)
+# 🖥️ C# from Bro Code Tutorial
 
 *"From comfy clicky IDEs to raw terminal brain-burners"*
 
